@@ -19,5 +19,8 @@ public class App {
     //prime numbers just print themselves
     System.out.println(factorizer.primeFactors(7)); //will return [7]
     System.out.println(factorizer.primeFactors(71)); //winn return [71]
+
+    //I'll have it return an empty string but I think negative numbers can also be factorized
+    System.out.println(factorizer.primeFactors(-5)); //will return []
   }
 }

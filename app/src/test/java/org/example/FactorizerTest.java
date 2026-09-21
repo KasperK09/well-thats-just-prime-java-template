@@ -95,6 +95,7 @@ class FactorizerTest {
     assertEquals(expected, factorizer.primeFactors(12));
   }
 
+  //tests for a negative number
   @Test
   void itReturnsAnEmptyListForNegativeNumbers() {
     Factorizer factorizer = new Factorizer();
