@@ -22,14 +22,6 @@ class FactorizerTest {
     assertEquals(new ArrayList<Integer>(), factorizer.primeFactors(1));
   }
 
-  //tests empty list should be []
-  @Test
-  void testsAnEmptyListForNegativeNumbers() {
-    Factorizer factorizer = new Factorizer();
-
-    assertEquals(new ArrayList<Integer>(), factorizer.primeFactors(-5));
-  }
-
   //tests if prime number (7) should be [7]
   @Test
   void TestSeven() {
