@@ -33,6 +33,17 @@ class FactorizerTest {
     assertEquals(expected, factorizer.primeFactors(7));
   }
 
+  //tests if prime number (71) should be [71]
+  @Test
+  void TestSeventyOne() {
+    Factorizer factorizer = new Factorizer();
+
+    ArrayList<Integer> expected = new ArrayList<>();
+    expected.add(71);
+
+    assertEquals(expected, factorizer.primeFactors(71));
+  }
+
   //tests 9 should be [3,3]
   @Test
   void testsNine() {
@@ -83,4 +94,11 @@ class FactorizerTest {
 
     assertEquals(expected, factorizer.primeFactors(12));
   }
+
+  @Test
+  void itReturnsAnEmptyListForNegativeNumbers() {
+    Factorizer factorizer = new Factorizer();
+
+    assertEquals(new ArrayList<Integer>(), factorizer.primeFactors(-5)); }
 }
+
